@@ -70,9 +70,7 @@ struct Main {
 
   build() {
     Column() {
-      Tabs({
-        barPosition:BarPosition.End
-      }){
+      Tabs({barPosition:BarPosition.End}){
         ForEach(this.nav,(item:NavItem) => {
           TabContent() {
             Column() {
